@@ -19,7 +19,7 @@ class ApiUser(HttpUser):
 
     @task(1)
     def get_users(self):
-        self.client.get("/users/")
+        self.client.get("/membros")
 
     # @task(1)
     # def update_user(self):
